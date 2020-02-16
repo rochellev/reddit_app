@@ -12,12 +12,16 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "connected-react-router": "^6.7.0",
     "expo": "~36.0.0",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
     "react-native-screens": "2.0.0-alpha.12",
-    "react-native-web": "~0.11.7"
+    "react-native-web": "~0.11.7",
+    "react-redux": "^7.1.3",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -35,18 +39,20 @@
     "typescript": "~3.6.3"
   },
   "eslintConfig": {
-    "extends": ["universe",
-      "universe/shared/typescript-analysis"],
-      "overrides" : {
-        "files": [
-          "*.ts",
-          "*.tsx",
-          "*.d.ts"
-        ],
-        "parserOptions": {
-          "project": "./tsconfig"
-        }
+    "extends": [
+      "universe",
+      "universe/shared/typescript-analysis"
+    ],
+    "overrides": {
+      "files": [
+        "*.ts",
+        "*.tsx",
+        "*.d.ts"
+      ],
+      "parserOptions": {
+        "project": "./tsconfig"
       }
+    }
   },
   "private": true
 }
