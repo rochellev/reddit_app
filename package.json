@@ -24,10 +24,29 @@
     "@types/jest": "^25.1.2",
     "@types/react": "~16.9.0",
     "@types/react-native": "~0.60.23",
+    "@typescript-eslint/eslint-plugin": "^2.19.2",
+    "@typescript-eslint/parser": "^2.19.2",
     "babel-preset-expo": "~8.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-universe": "^2.3.0",
     "jest-expo": "^36.0.1",
+    "prettier": "^1.19.1",
     "react-test-renderer": "^16.12.0",
     "typescript": "~3.6.3"
+  },
+  "eslintConfig": {
+    "extends": ["universe",
+      "universe/shared/typescript-analysis"],
+      "overrides" : {
+        "files": [
+          "*.ts",
+          "*.tsx",
+          "*.d.ts"
+        ],
+        "parserOptions": {
+          "project": "./tsconfig"
+        }
+      }
   },
   "private": true
 }
