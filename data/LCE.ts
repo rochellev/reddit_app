@@ -5,4 +5,14 @@
     Error - Data that failed to load with an error. Has the error object, and potentially previousData.
 */
 
+export type LOADING<T> = {
+  LCE: "LOADING",
+  previousData: T,
+};
 
+export const loading = <T>(previousData?: T): LOADING<T> => {
+  return {
+    LCE: "LOADING",
+    previousData,
+  }
+};
