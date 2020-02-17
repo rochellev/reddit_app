@@ -36,7 +36,7 @@ export type ERROR<T> = {
   error: Error;
 }
 
-export const error = <T>(error: Error, previousData: T) => {
+export const error = <T>(error: Error, previousData?: T) => {
   return {
     stage: "ERROR",
     error,
@@ -49,7 +49,7 @@ export type NOT_REQUESTED<T> = {
   previousData: T
 }
 
-export const notRequested = <T>(previousData: T) => {
+export const notRequested = <T>(previousData?: T) => {
   return {
     stage: "NOT_REQUESTED",
     previousData

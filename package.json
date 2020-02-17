@@ -14,6 +14,7 @@
   "dependencies": {
     "connected-react-router": "^6.7.0",
     "expo": "~36.0.0",
+    "history": "^4.10.1",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",

@@ -1,5 +1,6 @@
 export enum FrontPageActions  {
-  fetchStart = "FETCH_FRONT_PAGE_START",
-  fetchSuccess = "FETCH_FRONT_PAGE_SUCCESS",
-  fetchError = "FETCH_FRONT_PAGE_ERROR"
+  start = "FETCH_FRONT_PAGE_START",
+  success = "FETCH_FRONT_PAGE_SUCCESS",
+  error = "FETCH_FRONT_PAGE_ERROR"
 };
+

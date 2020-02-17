@@ -9,7 +9,6 @@ export type LceRendererProps<T> = {
 };
 
 export const LceRenderer = <T extends any>(props: LceRendererProps<T>) => {
-
   switch(props.lce.stage)
   {
     case "NOT_REQUESTED":
