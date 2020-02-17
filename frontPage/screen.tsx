@@ -14,9 +14,7 @@ export const FrontScreen = () => {
       <Text>Posts</Text>
       <LceRenderer lce={posts} loading={Loading} content={renderList} error={renderNull} notRequested={renderNull} />
     </View>
-  )
-
-  
+  )  
 }
 
 const renderNull = () => null;
