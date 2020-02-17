@@ -1,6 +1,7 @@
 import {takeLeading, call, put} from "redux-saga/effects";
 import {AccessTokenActions} from "./actions";
 import { username, password, basicAuthHeader } from "../.credentials";
+import {FrontPageActions } from "../frontPage/actions";
 
 
 function* getToken(action) {
@@ -26,6 +27,8 @@ function* getToken(action) {
     } else {
       yield put({type: AccessTokenActions.success, token: responseObject.access_token, expiresIn: responseObject.expires_in});
     }
+
+    yield put({type: FrontPageActions.start});
   } catch (error) {
     yield put({type: AccessTokenActions.error, error});
   }
