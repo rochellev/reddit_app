@@ -16,3 +16,5 @@ sagaMiddleware.run(accessTokenSaga);
 
 
 store.dispatch({type: AccessTokenActions.start});
+
+export type RootState = ReturnType<typeof rootReducer>;
