@@ -11,7 +11,7 @@ export const FrontScreen = () => {
 
   return (
     <View style={{paddingTop: 75}}>
-      <Text>Posts</Text>
+      <Text> Post the Post!!!</Text>
       <LceRenderer lce={posts} loading={Loading} content={renderList} error={renderNull} notRequested={renderNull} />
     </View>
   )  

@@ -33,3 +33,5 @@ function* getTrending(action) {
 export function* frontPageSaga() {
   yield takeLeading(FrontPageActions.start, getTrending);
 }
+
+// refactor to make work lol
